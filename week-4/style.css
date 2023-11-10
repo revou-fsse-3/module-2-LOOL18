@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "bebas";
+    src: url(Assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "permanent";
+    src: url(Assets/fonts/PermanentMarker-Regular.ttf);
+    font-weight: bolder;
+}
+body {
+    font-family: "Courier New", monospace ;
+    margin: 0;
+    }
+
+.dark-mode {
+    background-color: #333333;
+    color: white;
+    }
+
+.dark-mode > nav {
+    background-color: #333333;
+    color: white;
+    border-bottom: 2px solid white;
+    }
+    
+.dark-mode > nav a {
+        color: white;
+    }
+
+section {
+    margin: 0 16px;
+    }
+
+section.full-screen {
+    margin: 0;
+    }
+
+nav {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-bottom: 2px solid #222222;
+    z-index: 99999;
+    }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+    }
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    }
+
+input:checked + .slider {
+        background-color: #2196f3;
+    }
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+    }
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+    }
+
+.slider.round {
+    border-radius: 34px;
+    }
+
+.slider.round:before {
+    border-radius: 50%;
+    }
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+    }
+
+nav > #dark-mode-switch {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+    }
+
+nav > #dark-mode-switch > p {
+    margin-right: 8px;
+    }
+
+nav > ul > li {
+    display: inline-block;
+    }
+
+nav > span > img {
+    height: 32px;
+    width: auto;
+    padding: 8px;
+    }
+
+nav > span {
+    display: flex;
+    align-items: center;
+    }
+
+header {
+    font-family: "bebas", "Courier New", monospace ;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 48px;
+    background-image: url(Assets/image/GTR\ DEPAN.webp);
+    background-position: top center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    }
+
+@keyframes slidedown {
+    from {
+        margin-bottom: 100%;
+        
+    }
+
+    to {
+        margin-bottom: 0%;
+        
+    }
+    }
+
+@keyframes slideup {
+    from {
+        margin-top: 100%;
+        
+    }
+    
+    to {
+        margin-top: 0%;
+        
+    }
+    }
+
+.relative-container {
+    position: relative;
+    }
+
+header h1 {
+    font-weight: bolder;
+    margin: 16px;
+    font-size: 100px;
+    color: rgb(255, 166, 0);
+    animation-duration: 5s;
+    animation-name: slidedown;
+    text-shadow: 2px 2px #222222;
+    }
+
+header p {
+    margin: 0;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    animation-duration: 5s;
+    animation-name: slideup;
+    text-shadow: 2px 2px #222222;
+    }
+
+img {
+    width: 100%;
+    }
+
+h2 {
+    font-weight: 700;
+    text-align: center;
+    }
+
+#section-video .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+#R34-info .flex-container figure {
+    text-align: center;
+    }
+
+#R34-photos .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    grid-auto-rows: 240px 240px 240px;
+    }
+
+#R34-photos .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.grid-container #item-1 {
+    grid-column: 1 / 2 span;
+    grid-row: 1;
+    }
+
+fieldset {
+    margin: 16px 0;
+    border-radius: 4px;
+    }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 4px 4px;
+    margin: 8px 0;
+    display: block;
+    }
+
+input[type="date"] {
+    margin: 8px 0;
+    display: block;
+    }
+
+#form-section {
+    font-family: "permanent", "Courier New", monospace;
+    letter-spacing: 2px;
+    background-image: url(Assets/image/GTR\ R34\ BURNOUT\ BACK.webp);
+    background-position: top center;
+    background-size: cover;
+    color: rgb(251, 255, 0);
+    font-weight: bolder;
+    padding: 8px;
+    margin-top: 16px;
+    }
+
+#form-section form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+button[type="submit"] {
+    color: white;
+    background-color: transparent;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+.R34-photo-item {
+    filter: grayscale(100%);
+    cursor: pointer;
+    }
+
+.R34-photo-item:hover {
+    filter: none;
+    transition-property: filter;
+    transition-duration: 1s;
+    }
+
+  /* for tablet and desktop */
+@media only screen and (min-width: 768px) {
+#R34-info > .flex-container {
+    display: flex;
+    align-items: center;
+    }
+
+#R34-info > .flex-container figure {
+    margin-left: auto;
+    }
+
+#R34-info > .flex-container figure img {
+    height: 400px;
+    }
+
+#R34-info > .flex-container figcaption {
+    text-align: center;
+    margin-top: 16px;
+    }
+
+#R34-info > .flex-container.row-reverse {
+    flex-direction: row-reverse;
+    }
+
+#R34-info > .flex-container.row-reverse p {
+    margin-left: 32px;
+    }
+
+#R34-info > .flex-container.row-reverse figure {
+    margin-left: 40px;
+    min-width: 320px;
+    }
+
+iframe {
+    max-width: 480px;
+    }
+
+#R34-photos .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    grid-auto-rows: 320px 320px;
+    }
+
+#R34-photos .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.grid-container #item-1 {
+    grid-column: 1;
+    grid-row: 1 / 2 span;
+    }
+
+.grid-container #item-2 {
+    grid-row: 1;
+    grid-column: 2 / 3 span;
+    }
+    }
