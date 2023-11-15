@@ -1,4 +1,4 @@
-![Header](Assets/image/header%20cut.png)
+![Header](week-4/Assets/image/header%20cut.png)
 
 <h1 align="left">Welcome petrolhead ! <img src="https://raw.githubusercontent.com/muhammad-avicena/profile/master/wave.gif" width="30px" height="30px" /> </h1>
 Konnichiwa minna-san, I'm Rizqi Akbar. I'm presenting my beautifully masterpiece from NISSAN that exudes wildness and dominance. From a legendary hand with precision. To be focus on customer satisfaction, a bulletproof engine, perfect stability, this car offers a power of engine mass production with high standard of quality and style. You must be like it !
